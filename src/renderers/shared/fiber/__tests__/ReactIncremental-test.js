@@ -2110,7 +2110,7 @@ describe('ReactIncremental', () => {
     ReactNoop.flush();
 
     // Trigger an update in the middle of the tree
-    // This is necessary to reproduce the error as it curently exists.
+    // This is necessary to reproduce the error as it currently exists.
     instance.setState({
       throwError: true,
     });

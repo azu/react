@@ -406,7 +406,7 @@ rimraf('build', () => {
       () => createBundle(bundle, RN_PROD)
     );
   }
-  // rather than run concurently, opt to run them serially
+  // rather than run concurrently, opt to run them serially
   // this helps improve console/warning/error output
   // and fixes a bunch of IO failures that sometimes occured
   return runWaterfall(tasks)
